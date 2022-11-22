@@ -23,7 +23,6 @@ const Storage = multer.diskStorage({
 const attachmentUpload = multer({
   storage: Storage,
 }).single("attachment")
-
 // require('./app/routes/app.routes.js')(app);
 
 const connectionString = "mongodb://localhost:27017/sampleDB"
